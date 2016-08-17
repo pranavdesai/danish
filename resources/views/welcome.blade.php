@@ -10,7 +10,7 @@
                 <div class="panel-body">
                     <h3>Static Pages - </h3>
                     @foreach($showPages as $key=>$value)
-                        <h5><a href="{{ route('page.show', $value->name) }}">{{ $value->page }}</a></h5>
+                        <h5><a href="{{ url('/home', $value->name) }}">{{ $value->page }}</a></h5>
                     @endforeach
                 </div>
             </div>

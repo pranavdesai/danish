@@ -17,4 +17,6 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/home/{name}', 'HomeController@show');
+
 Route::resource('page', 'PagesController');

@@ -57,18 +57,7 @@ class PagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($name)
-    {
-        $getPage = Page::where([
-            ['name', $name],
-            ['active', '1'],
-        ])->first();
-        if(!empty($getPage)){
-            return view('pages.show')->with('showPage',$getPage);
-        }else{
-            return redirect('/');
-        }        
-    }
+    
 
     /**
      * Show the form for editing the specified resource.
